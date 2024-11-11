@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Layanan Antar Barang Bukti",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+    "icon": "FaMoneyBillAlt"
+  },
+  {
+    "id": 2,
+    "name": "Layanan Konsultasi Hukum Gratis",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+    "icon": "FaLock"
+  },
+  {
+    "id": 3,
+    "name": "Layanan Tilang Drive Thru",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+    "icon": "FaCloud"
+  },
+  {
+    "id": 4,
+    "name": "Layanan Tilang Delivery",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
+    "icon": "FaCloud"
+  }
+]
