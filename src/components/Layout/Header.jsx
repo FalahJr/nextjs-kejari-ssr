@@ -9,7 +9,7 @@ const Header = () => {
 
         <meta name="author" content="ArkanaTechnology" />
         <title>Kejari - Kejaksaan Negeri Surabaya</title>
-        <meta name="title" content="Kejari - Kejaksaan Negeri Surabaya" />
+        <meta name="title" content="Kejari web- Kejaksaan Negeri Surabaya" />
         <meta
           name="description"
           content="We Serve Custom Software Development for Your Startup (Website, Android Application, IOS Application)"
