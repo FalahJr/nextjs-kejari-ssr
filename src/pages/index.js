@@ -36,7 +36,7 @@ const Home = ({ services }) => {
     <>
       <Header />
       <Navbar />
-      <div className="bg-[url('/assets/img/bg-head2.png')] bg-fixed bg-cover bg-no-repeat xl:h-screen">
+      <div className=" bg-fixed bg-cover bg-no-repeat xl:h-screen">
         <div className="block">
           <div className="container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0">
             <div className="w-full md:w-11/12 flex flex-col text-white items-start md:py-24 xl:py-40 ">
