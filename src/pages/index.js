@@ -9,7 +9,6 @@ import Footer from "../components/Layout/Footer";
 import { FaMoneyBill } from "react-icons/fa";
 import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
-s;
 export async function getServerSideProps() {
   // Fetch data from an external API
   // const data = await fetch("https://api.example.com/services");
