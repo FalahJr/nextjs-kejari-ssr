@@ -10,12 +10,6 @@ const Footer = () => {
         <div className="mt-6 grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-3 w-full px-6 md:px-10">
           <div className="lg:col-start-1 lg:col-span-2 w-3/4">
             <div className="flex flex-col gap-4">
-              <Image
-                src="/assets/img/logo.png"
-                width={300}
-                height={260}
-                alt=""
-              />
               <h2 className="font-poppins-regular text-sm md:text-base mt-4">
                 Innovation distinguishes between a leader and a follower.
               </h2>

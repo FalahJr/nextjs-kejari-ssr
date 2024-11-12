@@ -59,39 +59,6 @@ const Home = ({ services }) => {
           </div>
         </div>
       </div>
-      {/* <div className="xl:h-screen">
-        <Carousel
-          showArrows={true}
-          // onChange={onChange}
-          // onClickItem={onClickItem}
-          // onClickThumb={onClickThumb}
-        >
-          <div>
-            <img src="/assets/img/banner-1.jpg" />
-            <p className="legend">Legend 1</p>
-          </div>
-          <div>
-            <img src="assets/2.jpeg" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src="assets/3.jpeg" />
-            <p className="legend">Legend 3</p>
-          </div>
-          <div>
-            <img src="assets/4.jpeg" />
-            <p className="legend">Legend 4</p>
-          </div>
-          <div>
-            <img src="assets/5.jpeg" />
-            <p className="legend">Legend 5</p>
-          </div>
-          <div>
-            <img src="assets/6.jpeg" />
-            <p className="legend">Legend 6</p>
-          </div>
-        </Carousel>
-      </div> */}
 
       <div className="bg-gradient-to-t from-white to-[#bbd4fe] py-16">
         <div className="px-4 xl:px-0 xl:container mx-auto flex flex-col items-center md:h-max text-[#153164]">

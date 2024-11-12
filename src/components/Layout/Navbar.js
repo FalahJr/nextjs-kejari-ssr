@@ -32,23 +32,7 @@ export function Navbar() {
     >
       <div className="w-full lg:container  mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
         <Link href="/" className="flex items-center w-auto text-4xl  mr-14">
-          {colorChange || showMobileNav ? (
-            // <Image
-            //   src="/assets/img/logo-red.png"
-            //   width={250}
-            //   height={60}
-            //   alt="Arkana Technology"
-            // />
-            <h2>Kejari</h2>
-          ) : (
-            // <Image
-            //   src="/assets/img/logo.png"
-            //   width={250}
-            //   height={60}
-            //   alt="Arkana Technology"
-            // />
-            <h2>Kejari</h2>
-          )}
+          {colorChange || showMobileNav ? <h2>Kejari</h2> : <h2>Kejari</h2>}
         </Link>
         <button
           type="button"
