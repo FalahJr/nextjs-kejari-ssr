@@ -164,24 +164,21 @@ const Home = ({ services }) => {
         </div>
       </div>
 
-      <div className="pb-10 md:pb-16 px-4 lg:px-20 bg-[#fcf2f3]">
+      <div className="pb-10 md:pb-16 px-4 lg:px-20 bg-gradient-to-b from-white to-[#bbd4fe]">
         <div className="sm:container sm:mx-auto bg-white flex flex-col md:flex-row justify-around rounded-xl shadow-xl z-10 w-full p-10">
-          <div className="justify-center items-start text-black">
+          <div className=" text-black">
             <h1 className="text-2xl sm:text-3xl tracking-wide">
-              Would you like to start a project with us?
-            </h1>
-            <h1 className="text-base sm:text-base mt-6">
-              Feel free to contact if any questions
+              Hotline Tanya Jawab
             </h1>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-end md:w-4/12 mt-8 md:mt-0">
             <Link
-              href="https://wa.me/62811333525"
+              href="https://wa.me/6281231365118"
               className="rounded-lg bg-[#17438E] text-white px-6 py-3 flex gap-2.5 justify-center items-center text-lg font-poppins-medium w-full md:w-auto hover:no-underline hover:text-[#17438E] hover:bg-white hover:border hover:border-[#17438E] duration-150"
             >
               <FaWhatsapp />
-              <span>+62811333525</span>
+              <span>+6281231365118</span>
             </Link>
           </div>
         </div>
