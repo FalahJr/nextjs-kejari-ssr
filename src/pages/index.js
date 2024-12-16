@@ -51,7 +51,7 @@ const Home = ({ berita }) => {
               key={item.id}
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0 bg-fixed bg-cover bg-no-repeat xl:h-screen"
               style={{
-                backgroundImage: `url(http://localhost:8000/img/berita/${item.gambar})`,
+                backgroundImage: `url(https://greasy-margarethe-minticode-2e20e0e1.koyeb.app/img/berita/${item.gambar})`,
               }}
             >
               {/* Overlay Transparan Hitam */}
@@ -116,7 +116,7 @@ const Home = ({ berita }) => {
                 <div
                   className="h-full md:h-3/6 bg-cover bg-no-repeat"
                   style={{
-                    backgroundImage: `url(http://localhost:8000/img/berita/${item.gambar})`,
+                    backgroundImage: `url(https://greasy-margarethe-minticode-2e20e0e1.koyeb.app/img/berita/${item.gambar})`,
                   }}
                 ></div>
                 <div className="px-4 py-3 h-auto">
