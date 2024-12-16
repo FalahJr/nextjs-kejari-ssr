@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export function Navbar() {
   const [showMobileNav, setShowMobileNav] = useState(false);
   const [colorChange, setColorChange] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false); // State untuk submenu
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 5) {
@@ -30,8 +31,8 @@ export function Navbar() {
           : "bg-transparent"
       } p-3 fixed w-full z-20 top-0 left-0 border-b border-gray-200`}
     >
-      <div className="w-full lg:container  mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
-        <Link href="/" className="flex items-center w-auto text-4xl  mr-14">
+      <div className="w-full lg:container mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
+        <Link href="/" className="flex items-center w-auto text-4xl mr-14">
           {colorChange || showMobileNav ? <h2>Kejari</h2> : <h2>Kejari</h2>}
         </Link>
         <button
@@ -46,14 +47,14 @@ export function Navbar() {
         </button>
 
         <div
-          className={` ${
+          className={`${
             showMobileNav ? "" : "hidden"
           } w-full md:block md:w-auto`}
           id="navbar-solid-bg"
         >
           <ul className="mt-4 flex flex-col rounded-lg md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:text-sm md:font-medium md:dark:bg-transparent md:items-center">
             <li
-              className={`hover:border-b-4 hover:duration-200 py-3  ${
+              className={`hover:border-b-4 hover:duration-200 py-3 ${
                 colorChange || showMobileNav
                   ? "hover:border-[#fb392f]"
                   : "hover:border-white"
@@ -70,26 +71,57 @@ export function Navbar() {
                 Beranda
               </Link>
             </li>
+
+            {/* Menu Profil dengan Dropdown */}
             <li
-              className={`hover:border-b-4 hover:duration-200 py-3  ${
-                colorChange || showMobileNav
-                  ? "hover:border-[#fb392f]"
-                  : "hover:border-white"
-              }`}
+              className="relative group"
+              onMouseEnter={() => setShowDropdown(true)}
+              onMouseLeave={() => setShowDropdown(false)}
             >
-              <a
-                href="/about"
-                className={`block rounded font-poppins-medium text-base md:text-xs lg:text-base md:text-center hover:no-underline ${
+              <div
+                className={`hover:border-b-4 hover:duration-200 py-3 ${
                   colorChange || showMobileNav
-                    ? "text-white hover:text-white"
-                    : "text-white hover:text-white"
+                    ? "hover:border-[#fb392f]"
+                    : "hover:border-white"
                 }`}
               >
-                Profil
-              </a>
+                <a
+                  href="#"
+                  className={`block font-poppins-medium text-base md:text-xs lg:text-base md:text-center ${
+                    colorChange || showMobileNav
+                      ? "text-white hover:text-white"
+                      : "text-white hover:text-white"
+                  }`}
+                >
+                  Profil
+                </a>
+              </div>
+
+              {/* Submenu */}
+              {showDropdown && (
+                <ul className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg text-gray-700">
+                  <li className="hover:bg-gray-100">
+                    <Link
+                      href="/visi-misi"
+                      className="block px-4 py-2 hover:text-blue-600"
+                    >
+                      Visi & Misi
+                    </Link>
+                  </li>
+                  <li className="hover:bg-gray-100">
+                    <Link
+                      href="/struktur-organisasi"
+                      className="block px-4 py-2 hover:text-blue-600"
+                    >
+                      Struktur Organisasi
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
+
             <li
-              className={`hover:border-b-4 hover:duration-200 py-3  ${
+              className={`hover:border-b-4 hover:duration-200 py-3 ${
                 colorChange || showMobileNav
                   ? "hover:border-[#fb392f]"
                   : "hover:border-white"
@@ -196,14 +228,6 @@ export function Navbar() {
                 Pelayanan Publik
               </a>
             </li>
-            {/* <li>
-              <Link
-                href="/contact"
-                className="mt-2 block rounded-full bg-[#f9c300] py-1 text-center font-poppins-bold text-base text-white md:mt-1 md:py-3 md:px-6 hover:text-white hover:no-underline hover:bg-[#e8bd22]"
-              >
-                REQUEST QUOTE
-              </Link>
-            </li> */}
           </ul>
         </div>
       </div>
